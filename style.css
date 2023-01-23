@@ -1,0 +1,14 @@
+body{
+    background: #204a8f;
+    font-family: "Redressed", cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  
+   }
+header {
+    font-size: 50px;
+     color: rgb(12, 12, 12);      
+}
