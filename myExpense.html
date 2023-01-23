@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Expense Tracker </title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <h1 style="color:rgb(63, 58, 58)">Expense Tracker</h1>
+    <section>    
+            <form id="expenseForm">
+                <fieldset style="width:100%;">
+                    <legend>Enter Expenses</legend>
+                <div>
+                    <span for="type">Category:</span>
+                    <select id="type">
+                        <option value="selectOne">Select...</option>
+                        <option value="Fuel">Fuel</option>
+                        <option value="Food">Food</option>
+                        <option value="Shopping">Shopping</option>
+                        <option value="Investment">Investment</option>
+                        <option value="Movie">Movie</option>
+                        <option value="Travelling">Travelling</option>
+                        <option value="Other">Other</option>
+                    </select><br><br>
+                </div>
+                    <span for="name">Description:</span>
+                    <input type="text" id="name" required><br><br>               
+                    <span for="amount">Amount:</span>
+                    <input type="number" id="amount" required><br><br> 
+                <button type="submit" class="buttonSave">Add To Expense</button>
+            </fieldset>
+            </form>
+    </section>
+    <section>
+        <table>  
+            <tr>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Amount</th>
+            <th>Options</th>
+            </tr>   
+            <tbody id="expenseTable"></tbody>           
+        </table>
+    </section>
+    <script src="myExpense.js"></script>
+</body>
+</html>
